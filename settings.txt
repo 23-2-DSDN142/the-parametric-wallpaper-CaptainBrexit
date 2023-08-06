@@ -1,53 +1,323 @@
-You will need to fill out this file for hand in. 
-The bellow is just an example, feel free to disregard this documents contents.
-
-
-Your final settings.txt will look something like this when you are finished:
-
 /////////////////////////////////
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 20; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 1; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 1; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 20; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 1; //Thickness of the border of the coloured diamonds
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 10; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 0; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 1; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 20; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 1; //Thickness of the border of the coloured diamonds
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
-  pWallpaper.show_guide(false); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
 
-  //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 20; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 1; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 1; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 10; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 5; //Thickness of the border of the coloured diamonds
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 20; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 1; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 1; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 20; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 1; //Thickness of the border of the coloured diamonds
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 20; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 1; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 1; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 30; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 0; //Thickness of the border of the coloured diamonds
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 5; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 0; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 5; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 30; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 0; //Thickness of the border of the coloured diamonds
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 5; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 0; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 5; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 40; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 0; //Thickness of the border of the coloured diamonds
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 5; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 1; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 5; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 20; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 5; //Thickness of the border of the coloured diamonds
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//Don't change these settings
+let redDiamondOriginX = 0; 
+let yellowDiamondOriginX = 50;
+let greenDiamondOriginX = 100;
+let blueDiamondOriginX = 50;
+let blackWhiteDiamondOriginX = 50;
+
+//Or these settings
+let redDiamondOriginY =  50; 
+let yellowDiamondOriginY = 0;
+let greenDiamondOriginY = 50;
+let blueDiamondOriginY = 100;
+let blackWhiteDiamondOriginY = 50;
+
+//These settings are changeable
+let blackWhiteDiamondRadius = 40; //Radius of the black/white diamond, max radius before overlap is 20
+let blackWhiteDiamondOrientation = 1; //Flips the orientation of black/white traingles within small diamond, set to 0 or 1 to rotate
+let blackWhiteDiamondBorderThickness = 5; //Thickness of the white border of the small black/white diamond, any higher than 10 looks weird
+let colouredDiamondRadius = 20; // Radius of the multiple coloured diamonds, max radius before overlap is 30
+let colouredDiamondBorderThickness = 5; //Thickness of the border of the coloured diamonds
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); 
+
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
